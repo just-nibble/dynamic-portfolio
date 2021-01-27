@@ -7,13 +7,13 @@ class Education(models.Model):
     insitution_name = models.CharField(max_length=200)
     location = models.CharField(max_length=100)
     start_date = models.DateField()
-    end_date = models.CharField()
+    end_date = models.CharField(max_length=100)
 
     def __str__(self):
         return str(self.insitution_name)
 
     class Meta:
-        ordering = "start_date"
+        ordering = ("start_date",)
 
 
 class Experience(models.Model):
@@ -21,13 +21,13 @@ class Experience(models.Model):
     location = models.CharField(max_length=100)
     tasks = models.TextField()
     start_date = models.DateField()
-    end_date = models.CharField()
+    end_date = models.CharField(max_length=100)
 
     def __str__(self):
         return str(self.insitution_name)
 
     class Meta:
-        ordering = "start_date"
+        ordering = ("start_date",)
 
 
 class Skill(models.Model):
@@ -37,7 +37,7 @@ class Skill(models.Model):
         return str(self.skill_name)
 
     class Meta:
-        ordering = "skill_name"
+        ordering = ("skill_name",)
 
 
 class Hobby(models.Model):
@@ -47,4 +47,4 @@ class Hobby(models.Model):
         return str(self.hobby_name)
 
     class Meta:
-        ordering = "hobby_name"
+        ordering = ("hobby_name",)

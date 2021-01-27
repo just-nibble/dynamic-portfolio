@@ -16,4 +16,4 @@ class Job(models.Model):
         return str(self.job_name)
 
     class Meta:
-        ordering = "job_name"
+        ordering = ("job_name",)
