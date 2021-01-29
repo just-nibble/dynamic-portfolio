@@ -14,6 +14,7 @@ import os
 import cloudinary
 import cloudinary.api
 import cloudinary.uploader
+import secret
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,7 +24,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ')6v7wcf))h2!+(+neyfj70*87(3f9-vgb&o-y0%i!2sm9#zs5^'
+
+# Secret key moved to secret.py
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
