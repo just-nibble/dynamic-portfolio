@@ -14,7 +14,7 @@ import os
 import cloudinary
 import cloudinary.api
 import cloudinary.uploader
-import secret
+from . secret import SECRET_KEY
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -43,13 +43,15 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # user created
-    'jobs',
-    'account',
-    'resume',
+    'jobs.apps.JobsConfig',
+    'clients.apps.ClientsConfig',
+    'resume.apps.ResumeConfig',
 
     # third party
     'cloudinary',
 ]
+
+AUTH_USER_MODEL = 'clients.Client'  # new
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -130,3 +132,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+LOGIN_REDIRECT_URL = 'home'
