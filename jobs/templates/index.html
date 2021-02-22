@@ -1,0 +1,282 @@
+
+{% extends "base.html" %}
+
+{% load static %}
+
+
+{% block content %}
+    
+	<!--================ Start Home Banner Area =================-->
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7">
+						<div class="banner_content">
+							<h3 class="text-uppercase">Hello</h3>
+							<h1 class="text-uppercase">I am Princewill Olaiya</h1>
+							<h5 class="text-uppercase">Software Engineer</h5>
+							<div class="d-flex align-items-center">
+								<a class="primary_btn" href="mailto:princewillolaiya@gmail.com"><span>Hire Me</span></a>
+								<a target="blank" class="primary_btn tr-bg" href="{% url 'resume' %}"><span>View Resume</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="home_right_img">
+							<img class="" src="{% static 'img/banner/home-right.png' %}" height="5px" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Start About Us Area =================-->
+	<section class="about_area section_gap" id="about_area">
+		<div class="container">
+			<div class="row justify-content-start align-items-center">
+				<div class="col-lg-5">
+					<div class="about_img">
+						<img class="" src="{% static 'img/about-us.png' %}" alt="">
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-5">
+					<div class="main_title text-left">
+						<h2>let’s <br>
+							Introduce about <br>
+							myself</h2>
+						<p>
+							Whose given. Were gathered. There first subdue greater. Bearing you Whales heaven 
+							midst their. Beast creepeth. Fish days.
+						</p>
+						<p>
+							Is give may shall likeness made yielding spirit a itself together created after sea 
+							is in beast beginning signs open god you're gathering whose gathered cattle let. 
+							Creature whales fruit unto meat the life beginning all in under give two.
+						</p>
+						<a class="primary_btn" href="#"><span>Download CV</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End About Us Area =================-->
+
+
+	<!--================ Start Features Area =================-->
+	<section class="features_area" id="features_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h2>service offers </h2>
+						<p>
+							Is give may shall likeness made yielding spirit a itself togeth created 
+							after sea <br> is in beast beginning signs open god you're gathering ithe
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row feature_inner">
+				<div class="col-md-4 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/services/s3.png' %}" alt="">
+						<h4>Web development</h4>
+						<p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+					</div>
+				</div>
+				<div class="col-md-4 col-md-6">
+					<div class="feature_item">
+						<img src="{% static 'img/services/s4.png' %}" alt="">
+						<h4>API Development</h4>
+						<p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Features Area =================-->
+
+	<!--================Start Portfolio Area =================-->
+	<section class="portfolio_area" id="portfolio">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title text-left">
+						<h2>Projects.</h2>
+					</div>
+				</div>
+			</div>
+			<div class="filters portfolio-filter">
+				<ul>
+					<li class="active" data-filter="*">all</li>
+					<li data-filter=".api">API</li>
+					<li data-filter=".web">Web Applications</li>
+				</ul>
+			</div>
+	
+			<div class="filters-content">
+				<div class="row portfolio-grid justify-content-center">
+					<div class="col-lg-4 col-md-6 all web">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/p1.png" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/p1.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Game Repo</a></h4>
+								<p>RESTful API</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all api">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/p2.jpg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/p2.jpg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">Paint wall</a></h4>
+								<p>Animated, portfolio</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all web">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/p3.jpg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/p3.jpg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">female light</a></h4>
+								<p>Animated, portfolio</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all api">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/p4.jpg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/p4.jpg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">fourth air</a></h4>
+								<p>Animated, portfolio</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/p6.jpg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/p5.jpg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">together sign</a></h4>
+								<p>Animated, portfolio</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all upcoming">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/p5.jpg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/p6.jpg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">multiply fowl</a></h4>
+								<p>Animated, portfolio</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all upcoming following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/p7.jpg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/p7.jpg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">green heaven</a></h4>
+								<p>Animated, portfolio</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/p8.jpg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/p8.jpg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4>fly male</h4>
+								<p>Animated, portfolio</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all upcoming">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/p9.jpg" alt="">
+								<div class="overlay"></div>
+								<a href="img/portfolio/p9.jpg" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="portfolio-details.html">season face</a></h4>
+								<p>Animated, portfolio</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Portfolio Area =================-->
+
+{% endblock content %}
