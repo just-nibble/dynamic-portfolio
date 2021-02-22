@@ -10,7 +10,7 @@ def resume(request):
     hobby = Hobby.objects.all()
     content = {
         'education': education,
-        'experience' experience,
+        'experience': experience,
         'skill': skill,
         'hobby': hobby,
     }
