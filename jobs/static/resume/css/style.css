@@ -1,0 +1,17 @@
+img{
+  border: solid rgba(14, 13, 13, 0.336);
+}
+.fab{
+  height: 100;
+}
+.img-fluid.custom{
+  height: 300px;
+}
+.call{
+  margin-top: 20px;
+}
+@media(max-width:360px){
+  .call{
+    width: 53%
+  }
+}

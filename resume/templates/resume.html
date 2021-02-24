@@ -1,7 +1,98 @@
-{% extends "base.html" %}
+{% extends "base_resume.html" %}
 
 {% block content %}
-{% for education in education %}
-    <p>education</p>
-{% endfor %}
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1 class="mb-0">Princewill <span class="text-primary">Olaiya</span></h1>
+                <div class="subheading mb-5 text-center"><a href="mailto:princewill@email.com">Email me</a></div>
+                <p class="lead mb-5">I am experienced in building solutions with various web development technologies.</p>
+                <div class="social-icons">
+                    <a class="social-icon" href="https://www.linkedin.com/in/ifedapo-olaiya-73975ab8"><i class="fab fa-linkedin-in"></i></a><a class="social-icon" href="https://www.github.com/just-nibble"><i class="fab fa-github"></i></a><a class="social-icon" href="https://twitter.com/ife_py?s=08"><i class="fab fa-twitter"></i></a><a class="social-icon" href="https://www.facebook.com/princewill.olaiya.33"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Experience-->
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Experience</h2>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        {% for experience in experience %}
+                            <h3 class="mb-0">{{ experience.role }}</h3>
+                            <div class="subheading mb-3">{{ experience.institution_name }}</div>
+                            <p>{{ experience.summary }}</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">{{ experience.start_date }} – {{ experience.end_date }}</span></div>
+                    </div>
+                        {% endfor %}
+                        
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Education</h2>
+                {% for education in education  %}
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">{{ education.insitution_name}}</h3>
+                            <div class="subheading mb-3">{{ education.certficate }}</div>
+                            <div>{{ education.major }}</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">{{ education.start_date }} - {{ education.end_date }}</span></div>
+                    </div>
+                {% endfor %}
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Skills-->
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Skills</h2>
+                <div class="subheading mb-3">Programming Languages & Tools</div>
+                <ul class="list-inline dev-icons">
+                    <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                    <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                    <li class="list-inline-item"><img src="https://img.icons8.com/ios/50/000000/golang.png"/></li>
+                    <li class="list-inline-item"><i class="fab fa-php"></i></li>
+                </ul>
+                <div class="subheading mb-3">Workflow</div>
+                <ul class="fa-ul mb-0">
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>Mobile-First, Responsive Design
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>Cross Browser Testing & Debugging
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>Cross Functional Teams
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>Agile Development & Scrum
+                    </li>
+                    <li>
+                        <span class="fa-li"><i class="fas fa-check"></i></span>Git
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Interests-->
+        <section class="resume-section" id="interests">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Interests</h2>
+                <p>I enjoy most of my time being indoors. I follow a number of sci-fi and horror genre movies and television shows, I also spend a large amount of my free time exploring the latest technology advancements in artificial intelligence and space exploration.</p>
+                <p class="mb-0">I also enjoy swimming</p>
+            </div>
+        </section>
+        <hr class="m-0" />
+    </div>
 {% endblock content %}
