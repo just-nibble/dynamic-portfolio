@@ -5,7 +5,15 @@ from cloudinary.models import CloudinaryField
 
 
 class Job(models.Model):
+    types = (
+        ("web_apps", "web_apps"), ("api", "api"),
+        ("upcoming", "upcoming")
+    )
     job_name = models.CharField(max_length=100)
+    job_type = models.CharField(
+        choices=types, max_length=20,
+        null=True, blank=True
+    )
     job_link = models.URLField(null=True, blank=True)
     job_repo = models.URLField(null=True, blank=True)
     job_image = CloudinaryField("job_image", blank=True, null=True)
