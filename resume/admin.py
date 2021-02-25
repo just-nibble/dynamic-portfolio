@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Education, Experience, Skill, Hobby
+from .models import Education, Experience, Skill, Interests
 # Register your models here.
 
 admin.site.register(Education)
 admin.site.register(Experience)
 admin.site.register(Skill)
-admin.site.register(Hobby)
+admin.site.register(Interests)

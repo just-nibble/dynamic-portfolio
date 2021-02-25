@@ -17,3 +17,11 @@ class Job(models.Model):
 
     class Meta:
         ordering = ("job_name",)
+
+
+class Intro(models.Model):
+    first_summary = models.CharField(max_length=400, blank=True, null=True)
+    second_summary = models.CharField(max_length=400, blank=True, null=True)
+
+    def __str__(self):
+        return "summary for portfolio"

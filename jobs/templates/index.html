@@ -45,19 +45,12 @@
 
 				<div class="offset-lg-1 col-lg-5">
 					<div class="main_title text-left">
-						<h2>let’s <br>
-							Introduce about <br>
+						<h2>let’s Introduce<br>
 							myself</h2>
-						<p>
-							Whose given. Were gathered. There first subdue greater. Bearing you Whales heaven 
-							midst their. Beast creepeth. Fish days.
-						</p>
-						<p>
-							Is give may shall likeness made yielding spirit a itself together created after sea 
-							is in beast beginning signs open god you're gathering whose gathered cattle let. 
-							Creature whales fruit unto meat the life beginning all in under give two.
-						</p>
-						<a class="primary_btn" href="#"><span>Download CV</span></a>
+							{% for intro in intro %}
+								<p>{{ intro.first_summary }}</p>
+								<p>{{ intro.second_summary }}</p>
+							{% endfor %}
 					</div>
 				</div>
 			</div>

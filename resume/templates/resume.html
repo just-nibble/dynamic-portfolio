@@ -19,17 +19,17 @@
         <section class="resume-section" id="experience">
             <div class="resume-section-content">
                 <h2 class="mb-5">Experience</h2>
-
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="flex-grow-1">
-                        {% for experience in experience %}
+                {% for experience in experience %}
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
                             <h3 class="mb-0">{{ experience.role }}</h3>
                             <div class="subheading mb-3">{{ experience.institution_name }}</div>
                             <p>{{ experience.summary }}</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">{{ experience.start_date }} – {{ experience.end_date }}</span></div>
                     </div>
-                        {% endfor %}
+                {% endfor %}   
+            </div>
                         
             </div>
         </section>
