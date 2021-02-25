@@ -89,8 +89,9 @@
         <section class="resume-section" id="interests">
             <div class="resume-section-content">
                 <h2 class="mb-5">Interests</h2>
-                <p>I enjoy most of my time being indoors. I follow a number of sci-fi and horror genre movies and television shows, I also spend a large amount of my free time exploring the latest technology advancements in artificial intelligence and space exploration.</p>
-                <p class="mb-0">I also enjoy swimming</p>
+                {% for interest in interests  %}
+                    <p>{{ interest.interest }}</p>
+                {% endfor %}
             </div>
         </section>
         <hr class="m-0" />
