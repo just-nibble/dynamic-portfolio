@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css' %}">
 	<!-- main css -->
 	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="icon" href="{% static 'img/favicon.png' %}">
     <title>
         {% block title %}
         {% endblock title %}
@@ -39,7 +40,7 @@
 							<li class="nav-item"><a class="nav-link" href="#features_area">Services</a></li>
 							<li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
 							<li class="nav-item"><a class="nav-link" href="{% url 'resume' %}">Resume</a></li>
-							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+							<li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
 						</ul>
 					</div>
 				</div>
